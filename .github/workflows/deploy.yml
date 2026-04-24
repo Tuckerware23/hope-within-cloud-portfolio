@@ -19,9 +19,13 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
+              working-directory: website-deployment
+            
         run: npm install
 
       - name: Build website
+              working-directory: website-deployment
+              
         run: npm run build
 
       - name: Configure AWS credentials
@@ -32,4 +36,4 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy to S3
-        run: aws s3 sync dist/ s3://${{ secrets.S3_BUCKET_NAME }}/ --delete --exclude '.git/*' --exclude '.github/*'
+        run: aws s3 sync website-deployment/dist s3://${{ secrets.S3_BUCKET_NAME }} --delete
