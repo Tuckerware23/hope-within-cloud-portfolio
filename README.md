@@ -1,4 +1,4 @@
-# Hope Within Cloud Portfolio
+e# Hope Within Cloud Portfolio
 
 A cloud engineering portfolio showcasing real‑world projects including web deployment, game infrastructure, automation, and networking.
 
@@ -25,7 +25,9 @@ This repository contains my hands‑on cloud projects that demonstrate my transi
 
 ### 🌐 Website Deployment
 
-The Hope Within Universe website is built with React and Vite. The project covers creating an S3 bucket, enabling static website hosting, configuring bucket policies, and optionally setting up a CloudFront distribution for HTTPS and global caching. It also documents how to map a custom domain via Route 53.
+The Hope Within Universe website is built with React and Vite. The project covers creating an S3 bucket, enabling static website hosting, configuring bucket policies, and optionally setting up a CloudFront distribution for 
+You can visit the live site at https://hopewithinuniverse.com.
+HTTPS and global caching. It also documents how to map a custom domain via Route 53.
 
 ### 🎮 Game Infrastructure
 
